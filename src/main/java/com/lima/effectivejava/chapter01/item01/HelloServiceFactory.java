@@ -13,7 +13,7 @@ public class HelloServiceFactory {
 //    }
 //  }
 
-  // [1] 정적 팩토리 메서드가 있는 상태일때 인터페이스ㅏㄴ 존재하면된다.
+  // [1] 정적 팩토리 메서드가 있는 상태일때 인터페이스만 존재하면된다.
   public static void main(String[] args) {
     // KoreanHelloService 의존적이지 않음 import안해도됨
     ServiceLoader<HelloService> loader = ServiceLoader.load(HelloService.class);
